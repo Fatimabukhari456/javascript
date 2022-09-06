@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>windowOpen &close</title>
+</head>
+<body>
+    <button onclick="openwindow()">0penWindow</button>
+    <button onclick="colsewindow()">CloseWindow</button>
+    <script>
+        var mywindow;
+        function openwindow(){
+           mywindow = window.open("https://www.google.com/","","width=100px,height=200px,left=100px,top=200px");
+        }
+        function colsewindow(){
+            mywindow.close();
+        }
+    </script>
+</body>
+</html>
